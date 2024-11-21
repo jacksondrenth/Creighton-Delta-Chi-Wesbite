@@ -1,4 +1,4 @@
-I create everything regarding php, ajax, and most html features in this website. The only think not of my work is the template that I used for free from html5up.net. 
+I created everything regarding php, ajax, and most html features in this website. The only think not of my work is the template that I used for free from html5up.net. 
 
 Below is some information on what I used as a template.
 
