@@ -1,0 +1,195 @@
+/* CSS for ajax loading spinning icon */
+#ajaxloader {
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+  border: 16px solid #3C599B;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* CSS for the calendar */
+/** event calendar **/
+.calendar {
+  width: 960px;
+  margin: 20px 0;
+  text-align: center;
+  line-height: 40px;
+  background-color: #f1bd19;
+  font-family: 'Roboto', sans-serif;
+}
+.calendar-days,
+.calendar-dates {
+  width: 100%;
+  float: left;
+}
+.calendar-days ul,
+.calendar-dates ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.calendar-days ul li {
+  float: left;
+  display: block;
+  width: calc(100% / 7);
+  text-align: center;
+  min-height: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+}
+.calendar-dates ul li {
+  float: left;
+  width: calc((100% - 7px)/ 7);
+  height: 110px;
+  text-align: center;
+  box-shadow: 0 0 0 1px #000000;
+  min-height: 0;
+  margin: 0 0 1px 1px;
+  padding: 5px;
+  position: relative;
+  color: #333333;
+}
+.calendar-dates:not(.advising-dates) ul li span {
+  float: left;
+  margin-left: 10px;
+}
+.calendar-date {
+  cursor: pointer;
+}
+.calendar-date:hover,
+.calendar-date:focus {
+  background-color: #eee;
+  border-color: #eee ;
+}
+.calendar-today {
+  background-color: #d17f29!important;
+  border-color: #d17f29!important;
+}
+.calendar-today:hover,
+.calendar-today:focus {
+  background-color: #d15d29!important;
+  border-color: #d15d29!important;
+}
+.bg-primary.calendar-date:hover,
+.bg-primary.calendar-date:focus {
+  background-color: #2e59d9!important;
+  border-color: #2653d4!important;
+}
+.bg-success.calendar-date:hover,
+.bg-success.calendar-date:focus {
+  background-color: #218838!important;
+  border-color: #1e7e34!important;
+}
+.total-events {
+  margin: 35px 28px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#calendar-month {
+    border-radius: 0;
+}
+
+section.spotlight h2 {
+color: #ca3d31;
+}
+
+section.spotlight p {
+color: #f1bd19;
+}
+
+/* Style for the month and year dropdown menus */
+/* Style for the month and year dropdown menus */
+#calendar-month, #calendar-year {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #333;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 6px center; /* Adjust the right position */
+  background-size: 12px; /* Reduce the icon size */
+  cursor: pointer;
+}
+
+/* Style for the dropdown options */
+#calendar-month option, #calendar-year option {
+  background-color: #fff;
+  color: #333;
+  padding: 8px 12px;
+}
+
+/* Style for the dropdown menu when open */
+#calendar-month::-ms-expand, #calendar-year::-ms-expand {
+  display: none;
+}
+
+/* Style for the navigation buttons */
+.calendar-nav button {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+
+
+/* ... (existing styles) ... */
+
+#event-list table {
+  border-color: #000000;
+}
+
+#event-list th,
+#event-list td {
+  border-color: #000000;
+}
+
+#event-list th {
+  color: #000000; /* Set the text color to black */
+  font-weight: bold; /* Optional: Add bold styling for emphasis */
+}
+
+/* enable if you want to hide the border on those with no dates (e.g. blank boxes)
+.no-date {
+box-shadow: 0 0 0 0 !important;
+}
+*/
+
+/* CSS fixes */
+.clear {
+  clear: both;
+}
+
+/* sets additional CSS based on page size */
+@media screen and (max-width: 1200px) {
+  .calendar {
+	width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .calendar-dates ul li {
+	height: 80px;
+  }
+  .total-events {
+	display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .calendar-dates ul li {
+	height: 65px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .calendar-dates ul li {
+	height: 50px;
+  }
+}
