@@ -1,3 +1,7 @@
+I create everything regarding php, ajax, and most html features in this website. The only think not of my work is the template that I used for free from html5up.net. 
+
+Below is some information on what I used as a template.
+
 Spectral by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
